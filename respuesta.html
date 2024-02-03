@@ -1,0 +1,271 @@
+
+
+	  <script>
+	const v=[0,0,0,0,0];
+	const v1=['a','b','c','d','e'];
+	const v3=['A','B','C','D','E'];
+	const v2=[0,0,0,0,0];
+	var ca=0;var cb=0;var cc=0;var cd=0;var ce=0;
+		for(var i=0;i<25;i++){
+			var va='';
+			if(i==0){
+				va = localStorage.getItem('c1');
+			}
+			if(i==1){
+				va = localStorage.getItem('c2');
+			}
+			if(i==2){
+				va = localStorage.getItem('c3');
+			}
+			if(i==3){
+				va = localStorage.getItem('c4');
+			}if(i==4){
+				va = localStorage.getItem('c5');
+			}
+			if(i==5){
+				va = localStorage.getItem('c6');
+			}if(i==6){
+				va = localStorage.getItem('c7');
+
+			}
+			if(i==7){
+				va = localStorage.getItem('c8');
+
+			}if(i==8){
+				va = localStorage.getItem('c9');
+
+			}
+			if(i==9){
+				va = localStorage.getItem('c10');
+
+			}
+			if(i==10){
+				va = localStorage.getItem('c11');
+
+			}
+			if(i==11){
+				va = localStorage.getItem('c12');
+
+			}
+			if(i==12){
+				va = localStorage.getItem('c13');
+
+			}
+			if(i==13){
+				va = localStorage.getItem('c14');
+
+			}
+			if(i==14){
+				va = localStorage.getItem('c15');
+
+			}
+			if(i==15){
+				va = localStorage.getItem('c16');
+
+			}
+			if(i==16){
+				va = localStorage.getItem('c17');
+
+			}
+			if(i==17){
+				va = localStorage.getItem('c18');
+
+			}
+			if(i==18){
+				va = localStorage.getItem('c19');
+
+			}
+			if(i==19){
+				va = localStorage.getItem('c20');
+
+			}
+			if(i==20){
+				va = localStorage.getItem('c21');
+
+			}
+			if(i==21){
+				va = localStorage.getItem('c22');
+
+			}
+			if(i==22){
+				va = localStorage.getItem('c23');
+
+			}
+			if(i==23){
+				va = localStorage.getItem('c24');
+
+			}
+			if(i==24){
+				va = localStorage.getItem('c25');
+
+			}
+//console.log('Valor de parametro1:', parametro1);
+			if(va=='a'){
+				ca++;
+			}
+			if(va=='b'){
+				cb++;
+
+			}
+			if(va=='c'){
+				cc++;
+			}if(va=='d'){
+				cd++;
+			}if(va=='e'){
+				ce++;
+			}
+
+				
+		}
+
+		v[0]=ca;v[1]=cb;v[2]=cc;v[3]=cd;v[4]=ce;
+
+		v2[0]=ca;v2[1]=cb;v2[2]=cc;v2[3]=cd;v2[4]=ce;
+
+			for(var i=0;i<5-1;i++){
+				for(var j=i+1;j<5;j++){
+					if(v[i]<v[j]){
+						var auxiliar = v3[i];
+						v3[i]=v3[j];
+						v3[j] = auxiliar;
+						var aux=v[i];
+						v[i]=v[j];
+						v[j]=aux;
+
+					}
+				}
+			}
+			
+
+	
+
+const vt = {
+  'A': "Tus actividades van encaminadas hacia los aspectos administrativos, económicos y de organización. Tu interés es generar riquezas mediante planeación de procedimientos, así como encaminar el logro de objetivos del algún grupo de personas.",
+  'B': "Ser analítico es parte de tu esencia, el diseño y construcción de mecanismos para satisfacer necesidades es parte de tu interés ya que facilitarías la vida diaria. El manejo de materiales para crear algo original y que mejore los avances científicos.",
+  'C': "El bienestar y la mejora de calidad de vida de otros es una de tus motivaciones para que las mismas puedan lograr una salud física y mental, la convivencia con la gente te permite conocer su comportamiento para llegar a un objetivo determinado.",
+  'D': "Tu desarrollo se logrará cuando interactúes con seres vivos y organismos. Te interesa conocer cómo es el funcionamiento de diversas sustancias, si es necesario, buscar su equilibrio y restablecer el funcionamiento previo a una alteración. La modificación y preservación de componentes orgánicos y naturales son también parte de tu interés.",
+  'E': "Te apasiona todo aquello que se encuentra relacionado con el arte, la música, lo bello y lo estético. Es de suma importancia tu sensibilidad y tu imaginación. Para comunicar tus ideas y emociones utilizas tu creatividad de manera visual o auditiva pero siempre son atractivas."
+};
+
+const vc = {
+  'A': "Carreras relacionadas: Contaduría Pública, Economía, Administración de Empresas, Mercadotecnia, Comercio Internacional, Ciencias Políticas, Derecho, Relaciones Industriales, Turismo.",
+  'B': "Carreras relacionadas: Ingeniería civil, Ingeniero Arquitecto, Ingeniería Industrial y de Sistemas, Ingeniería en Computación.",
+  'C': "Carreras relacionadas: Enfermería, Pedagogía, Nutrición, Trabajo Social, Psicología, Sociología, Educación.",
+  'D': "Carreras relacionadas: Biología, Química, Ecología, Medicina, Veterinaria, Biotecnología, Ciencias Naturales.",
+  'E': "Carreras relacionadas: Diseño Ambiental, Arquitectura, Ciencias y técnicas de la Comunicación, Artes, Comunicación Gráfica."
+};
+
+
+	  	function regresar(){
+	  		location.href="index.html";
+	  	}
+	  </script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div style="background-color: rgba(0, 0,15, 0.9);padding: 45px;">
+		<h1 style="color:white" align="center">RESULTADO DEL TEST VOCACIONAL</h1>
+		 <table>
+        <tr>
+            <td><h1 style="color:white">
+			 <script>
+			 	for(var i=0;i<5;i++){
+			 		document.write(v1[i]+" = "+v2[i]+"<br>");
+					
+				}
+				document.write("<br>");
+			 </script>
+
+			</h1></td>
+            <td>
+            	<div class="imagen-container">
+            		<img src="tes.PNG" alt="Imagen" class="imagen-redondeada">
+            	</div>
+            </td>
+        </tr>
+    </table>
+
+	<h1 align="center" style="color:white">Tus maximas notas son: 
+	<script>
+	if(v[0] !=0){
+		document.write(v3[0]+": "+v[0]);
+	}
+	if(v[1] !=0){
+		document.write(" y "+v3[1]+": "+v[1]);
+	}
+	</script>
+	</h1>
+
+	<h3></h3>
+	<h3 style="color:green">
+	<script>
+	document.write("<br>");
+	if(v[0] !=0){
+		document.write(v3[0]+": "+vt[v3[0]]);
+		document.write("<br>");document.write("<br>");
+		document.write(vc[v3[0]]);
+	}
+	document.write("<br>");document.write("<br>");document.write("<br>");
+	if(v[1] !=0){
+		document.write(v3[1]+": "+vt[v3[1]]);
+		document.write("<br>");document.write("<br>");
+		document.write(vc[v3[1]]);
+	}
+	
+	</script>
+	</h3>
+	
+	<center><input type="button"id='botoonenviar'name="salir" id='retornar' value='Regresar' onclick="regresar()"></center>
+	</div>
+	
+</body>
+</html>
+	<style type="text/css">
+		
+		body{
+			background: url(imagen.JPG) no-repeat center center fixed;
+	 		background-size: cover;
+
+		}
+		#botoonenviar{
+			color: lime;
+			height: 50px;
+			width: 300px;
+			background-color: rgba(255, 255, 150, 0.8);
+			border-radius: 5px;
+			font-size: 30px;
+		}
+		  table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+          
+
+        .imagen-container {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block; /* Alinea el contenedor en línea */
+        }
+
+        .imagen-redondeada {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+	</style>
+	 
